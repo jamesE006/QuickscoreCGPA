@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>QuickScore | CGPA Calculator</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+
+<div class="logoBox">
+
+<img src="logo.png" alt="QuickScore Logo" class="logo">
+
+<h1>QuickScore</h1>
+
+</div>
+
+</header>
+
+
+<!-- BACKGROUND SHAPES -->
+
+<div class="bgShape shape1"></div>
+<div class="bgShape shape2"></div>
+<div class="bgShape shape3"></div>
+
+
+<!-- MAIN -->
+
+<main class="main">
+
+<div class="calculator">
+
+<h2>CGPA Calculator</h2>
+
+<p>Enter your semester GPAs</p>
+
+<table>
+
+<thead>
+
+<tr>
+<th>Semester</th>
+<th>GPA</th>
+<th>remove</th>
+</tr>
+
+</thead>
+
+<tbody id="semesterTable"></tbody>
+
+</table>
+
+<button onclick="addSemester()">Add Semester</button>
+
+<button onclick="calculateCGPA()">Calculate CGPA</button>
+
+<button onclick="shareResult()">Share Result</button>
+
+<h3 id="result">CGPA: 0.00</h3>
+
+<div class="progressBox">
+
+<p>Progress to First Class (4.50)</p>
+
+<div class="progressBar">
+<div id="progressFill"></div>
+</div>
+
+</div>
+
+</div>
+
+</main>
+<footer class="footer">
+  <p>© 2026 QuickScore — Smart, fast, and reliable score calculations.</p>
+  <p>Designed by Emmanuel  James(@james.tec) | 
+  <a href="mailto:emmanueljay006@gmail.com">emmanueljay006@gmail.com</a></p>
+</footer>
+<script src="script.js"></script>
+</body>
+
+</html>
